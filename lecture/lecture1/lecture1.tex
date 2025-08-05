@@ -1,0 +1,382 @@
+\documentclass[20pt]{beamer}
+
+\input{../lecturepreamble.tex}
+
+\author{Henry Ding}
+\date{\today}
+\title{Lesson 1: Math Review and Measurement}
+
+
+\begin{document}
+\begin{frame}
+	\frametitle{Course Logistics}
+	\begin{itemize}
+		\item \textbf{Lectures}: Tuesday, Thursday, Saturday; 1 pm to 3 pm Pacific Time on Zoom (\href{https://us06web.zoom.us/j/84225321342}{link})
+		\item \textbf{Instructor}: Henry Ding (he/him) henry.d@princeton.edu
+		\item \textbf{Textbook}s: \href{https://openstax.org/details/books/physics}{OpenStax Physics (High School)}, \href{https://openstax.org/details/books/precalculus-2e}{OpenStax Precalculus 2e}. Recommended readings provided. Do not read everything!
+		\item \textbf{Assignments}: Homework due 11:59 PM via email before the next lesson. Feedback available before the next lesson.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Lesson Overview}
+	\tableofcontents
+\end{frame}
+
+\section{Trigonometry Review}
+\begin{frame}
+	\frametitle{Angles \footnotemark}
+	\begin{figure}[ht]
+		\centering
+		\inkfig{0.8\textwidth}{angle}
+		%\caption{}
+		\label{fig:angle}
+	\end{figure}
+	\begin{definition}
+		\textbf{Terminal angle} is the angle in standard position.
+	\end{definition}
+	\begin{definition}
+		\textbf{Radians} measure angle like degrees. $2\pi\;\SI{}{\radian}= 360^\mathrm{\circ}$.
+	\end{definition}
+	\begin{example}
+		Convert $45^\mathrm{\circ}$ to radians.
+	\end{example}
+	\footnotetext[1]{OpenStax Precalculus 2e 5.1}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Arc Length \footnotemark}
+	\begin{columns}
+		\begin{column}{0.45\textwidth}
+			\begin{figure}[ht]
+				\centering
+				\inkfig{\textwidth}{arclength}
+				%\caption{}
+				\label{fig:arclength}
+			\end{figure}
+		\end{column}
+		\hfill
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item<1-> Using degrees
+				      \begin{align*}
+					      s & = 2\pi r \left(\frac{60^\mathrm{\circ}}{360^\mathrm{\circ}}\right) \\
+					        & = r \left(\frac{2\pi \times 60}{360}\right)                        \\
+					        & = r \theta
+				      \end{align*}
+				      $\theta$ is the angle in radians!
+			\end{itemize}
+		\end{column}
+	\end{columns}
+	\begin{theorem}[Arc Length using Radians]
+		For an arc of radius $r$ subtending an angle $\theta$ in radians, the arc length is $s = r \theta$.
+	\end{theorem}
+	\footnotetext[1]{OpenStax Precalculus 2e 5.1}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Sine and Cosine \footnotemark}
+	\begin{figure}[ht]
+		\centering
+		\inkfig{0.6\textwidth}{sincos}
+		%\caption{}
+		\label{fig:sincos}
+	\end{figure}
+	\begin{definition}
+		For a point on the unit circle at angle $\theta$, $\cos \theta$ is the $x$-coordinate and $\sin \theta$ is the $y$-coordinate.
+	\end{definition}
+	\begin{example}
+		Find $\sin 45^\mathrm{\circ}$ and $\cos 45^\mathrm{\circ}$.
+	\end{example}
+	\footnotetext[1]{OpenStax Precalculus 2e 5.2}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Common Values for Sine and Cosine \footnotemark}
+	\begin{table}
+		\begin{tabular}{r | c | c  }
+			$\theta$                        & $\sin \theta$ & $\cos \theta$ \\
+			\hline \hline
+			$0^\mathrm{\circ}$ (0)          & $0$           & $1$           \\
+			$30^\mathrm{\circ}$ ($\pi$ / 6) & $1/2$         & $\sqrt{3}/2$  \\
+			$45^\mathrm{\circ}$ ($\pi$ / 4) & $\sqrt{2}/2$  & $\sqrt{2}/2$  \\
+			$60^\mathrm{\circ}$ ($\pi$ / 3) & $\sqrt{3}/2$  & $1/2$         \\
+			$90^\mathrm{\circ}$ ($\pi$ / 2) & $1$           & $0$           \\
+		\end{tabular}
+		%\caption{}
+	\end{table}
+	See textbook for derivation.
+	\footnotetext[1]{OpenStax Precalculus 2e 5.2}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Reference Angles \footnotemark}
+	\begin{columns}
+		\begin{column}{0.45\textwidth}
+			\begin{figure}[ht]
+				\centering
+				\inkfig{0.8\textwidth}{coterminalangle}
+				%\caption{}
+				\label{fig:coterminalangle}
+			\end{figure}
+		\end{column}
+		\hfill
+		\begin{column}{0.5\textwidth}
+			\begin{align*}
+				\sin \left(\frac{5\pi}{6}\right) & = \sin \left(\frac{\pi}{6}\right) = 1/2              \\
+				\cos \left(\frac{5\pi}{6}\right) & = - \cos \left(\frac{\pi}{6}\right) = - \sqrt{3} / 2
+			\end{align*}.
+		\end{column}
+	\end{columns}
+	\begin{alertblock}{Reference Angles}
+		Use reference angles to find values of $\sin , \cos$ for angles outside of $0$ to $\pi / 2$.
+	\end{alertblock}
+	\begin{example}
+		Find $\sin (5\pi / 3)$.
+	\end{example}
+	\footnotetext[1]{OpenStax Precalculus 2e 5.2}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Sine and Cosine from Right Triangles}
+	\begin{figure}[ht]
+		\centering
+		\inkfig{0.8\textwidth}{sincostriangle}
+		%\caption{}
+		\label{fig:sicostriangle}
+	\end{figure}
+	\begin{theorem}[$\sin, \cos$ from a Right Triangle]
+		Let $h$ be the hypotenuse of a right triangle.
+		Let $o, a$  be the opposite and adjacent sides to angle $\theta$.
+		Then,
+		\begin{align*}
+			\sin \theta = \frac{o}{h} \hspace{1cm} \cos \theta & = \frac{a}{h}
+		\end{align*}
+	\end{theorem}
+\end{frame}
+
+\section{Vector Review}
+\begin{frame}
+	\frametitle{Vectors as Arrows}
+	\begin{figure}[ht]
+		\centering
+		\inkfig{0.8\textwidth}{vectorarrow}
+		%\caption{}
+		\label{fig:vectorarrow}
+	\end{figure}
+	\begin{definition}
+		A \textbf{vector} is an arrow (1D, 2D, or 3D), denote $\vec{v}$ or $\overrightarrow{v}$. $||\vec{v}||$ is the magnitude (length) of $\vec{v}$.
+	\end{definition}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Writing Vectors}
+	\begin{figure}[ht]
+		\centering
+		\inkfig{0.8\textwidth}{vectornotation}
+		%\caption{}
+		\label{fig:vectornotation}
+	\end{figure}
+	\begin{definition}
+		A vector joining points $P$ and $Q$ is denoted $\overrightarrow{PQ}$.
+
+		A vector from $(0, 0)$ to $(a, b)$ on the coordinate plane is denoted $\langle a, b \rangle$, which is the \textbf{component form}.
+	\end{definition}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Adding Vectors}
+	\begin{figure}[ht]
+		\centering
+		\inkfig{0.8\textwidth}{vectoraddition}
+		%\caption{}
+		\label{fig:vectoraddition}
+	\end{figure}
+	\begin{definition}
+		To add vectors $\vec{u}, \vec{v}$, place them tip to tail. $\vec{u} + \vec{v}$ starts from the tail of $\vec{u}$ and ends on the tip of $\vec{v}$.
+	\end{definition}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Adding Vector in Component Form}
+	\begin{figure}[ht]
+		\centering
+		\inkfig{0.4\textwidth}{vectorcomponentaddition}
+		%\caption{}
+		\label{fig:vectorcomponentaddition}
+	\end{figure}
+	\begin{definition}
+		To add vectors in component form,
+		\begin{align*}
+			\langle a, b \rangle + \langle c, d \rangle = \langle a + c, b + d\rangle.
+		\end{align*}
+	\end{definition}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Scaling Vectors}
+	\begin{figure}[ht]
+		\centering
+		\inkfig{0.5\textwidth}{scalarmultiplication}
+		%\caption{}
+		\label{fig:scalarmultiplication}
+	\end{figure}
+	\begin{definition}
+		A \textbf{scalar} is a number like $2, 7/2, \sqrt{2},$ or $\pi$.
+	\end{definition}
+	\begin{definition}[Scalar Multiplication]
+		To multiply vector $\vec{u}$ by scalar $c$, multiply the magnitude of $\vec{u}$ by $c$ and maintain the direction.
+		In component form, multiply each component by $c$
+		\begin{align*}
+			c\langle a, b \rangle = \langle ca, cb\rangle.
+		\end{align*}
+	\end{definition}
+	\begin{example}[Vector Substraction]
+		Find $\langle 3, 5\rangle - \langle -2, 3\rangle$.
+	\end{example}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Finding the Vector Magnitude and Direction}
+	\begin{figure}[ht]
+		\centering
+		\inkfig{0.2\textwidth}{vectormagdir}
+		%\caption{}
+		\label{fig:vectormagdir}
+	\end{figure}
+	\begin{example}
+		Find the magnitude and direction (by finding $\theta$).
+		\begin{align*}
+			||\vec{v}||        & = \sqrt{\left(\frac{3}{2}\right)^2 + \left(\frac{3 \sqrt{3}}{2}\right)^2} = \sqrt{\frac{9}{4} + \frac{27}{4}} = 3. \\
+			\sin \theta        & = \frac{3 \sqrt{3} / 2}{3} = \sqrt{3} / 2                                                                          \\
+			\Rightarrow \theta & = \pi / 3.
+		\end{align*}
+	\end{example}
+	Remember $\sin, \cos$ for common angles!
+\end{frame}
+
+\begin{frame}
+	\frametitle{Unit Vectors}
+	\begin{definition}
+		In 2D, the unit vectors are.
+		\begin{align*}
+			\vec{\hat{i}} & = \langle 1, 0 \rangle  \\
+			\vec{\hat{j}} & = \langle 0, 1 \rangle.
+		\end{align*}
+		$\vec{\hat{i}}$ is one unit along the $x$-axis, and $\vec{\hat{j}}$ is one unit along the $y$-axis.
+	\end{definition}
+	\begin{theorem}[Component Form to Unit Vectors]
+		Consider $\langle a, b\rangle$.
+		Then, note
+		\begin{align*}
+			\langle a, b \rangle = a \langle 1, 0\rangle + b \langle 0, 1\rangle = a\vec{\hat{i}} + b \vec{\hat{j}}.
+		\end{align*}
+	\end{theorem}
+	\begin{example}
+		In terms of unit vectors,
+		\begin{align*}
+			\langle 3, 5\rangle = 3\vec{\hat{i}} + 5 \vec{\hat{j}}.
+		\end{align*}
+	\end{example}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Doing Math with Vector}
+	\begin{theorem}[Order Does Not Matter]
+		Consider $\vec{u} = \langle u_x, u_y \rangle$ and $\vec{v} = \langle v_x, v_y \rangle$.
+		Then,
+		\begin{align*}
+			\vec{u} + \vec{v} & = \langle u_x + v_x, u_y + v_y \rangle \\
+			\vec{v} + \vec{u} & = \langle v_x + u_x, v_y + u_y \rangle
+		\end{align*}
+		so $\vec{u} + \vec{v} = \vec{v} + \vec{u}$.
+	\end{theorem}
+	\begin{theorem}[Distributive Property for Vectors]
+		We can distribute scalar multiplication.
+		\begin{align*}
+			c(\vec{u} + \vec{v}) & = c \vec{u} + c \vec{v} \\
+			(a + b)\vec{u}       & = a \vec{u} + b \vec{u} \\
+		\end{align*}
+	\end{theorem}
+	\begin{example}
+		Let $u = 3 \vec{\hat{i}} - 8 \vec{\hat{j}}$. Find $2 \vec{u}$ in terms of $\vec{\hat{i}}, \vec{\hat{j}}$.
+	\end{example}
+\end{frame}
+
+\section{Measurement and Units}
+\begin{frame}
+	\frametitle{Units}
+	\begin{itemize}
+		\item Everyone needs to make measurements! (How \textit{long} is my arm? How \textit{fast} is the cell moving? What is the \textit{mass} of chemical?)
+		\item \textbf{Physical quantities} need standard \textbf{units}, so scientists can communicate with each other.
+	\end{itemize}
+	\begin{definition}[SI Unit System]
+		We (like many scientists) will SI unit system. There are many \textbf{base units}, but we will use three:
+		\begin{itemize}
+			\item \textit{length}: meter ($\mathrm{m}$)
+			\item \textit{mass}: kilogram ($\mathrm{kg}$)
+			\item \textit{second}: second ($\mathrm{s}$)
+		\end{itemize}
+		Units for other quantities are \textbf{derived units}. For example, the area of a rectangle is \textit{length} $\times$ \textit{width}, so we express it in meter $\times$ meter, or $\mathrm{m}^2$.
+	\end{definition}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Metric Prefixes}
+	Prefixes describe the relative size of a unit.
+	\begin{itemize}
+		\item \textit{giga} $1,000,000,000$
+		\item \textit{mega} $1,000,000$
+		\item \textit{kilo} $1000$
+		\item \textit{centi} $1/100$
+		\item \textit{milli} $1/1000$
+		\item \textit{micro} $1/1,000,000$
+		\item \textit{nano} $1/1,000,000,000$
+	\end{itemize}
+	\begin{example}
+		A \textit{centimeter} is $1/100$ of a \textit{meter}.
+	\end{example}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Unit Conversion}
+	To convert between units, multiply by $1$. (just like from degrees to radians!)
+	\begin{example}
+		Convert $\SI{35}{\kilo\meter}$ to $\SI{}{\centi\meter}$.
+	\end{example}
+\end{frame}
+
+\section{Homework 1}
+\begin{frame}
+	\frametitle{Homework Conventions}
+	\begin{itemize}
+		\item Label what problem you are solving
+		\item Show your work
+		\item Organize your work
+		\item Mark your answer
+		\item Try your best if you're stuck
+		      \begin{itemize}
+			      \item Send me an email if you're really stuck
+		      \end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Homework 1}
+	\begin{block}{Homework 1}
+		\begin{itemize}
+			\item OpenStax Precalculus 2e Chapter 5 Exercises 1-5, 9-14, 45-48
+			\item OpenStax Precalculus 2e Chapter 8 Exercises 52, 54, 58, 64
+			\item OpenStax Physics (High School) Chapter 1 Problem 34
+			\item We can model a leaning person as two segments at an angle. If the person's head is $\SI{0.4}{\meter}$ from their legs, their legs are $\SI{1.0}{\meter}$ long, and they are $\SI{1.8}{\meter}$ tall when standing up straight, find the leaning angle $\theta$.
+			      \begin{figure}[ht]
+				      \centering
+				      \inkfig{0.6\textwidth}{leaningproblem}
+				      %\caption{}
+				      \label{fig:leaningproblem}
+			      \end{figure}
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\end{document}

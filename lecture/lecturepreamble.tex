@@ -1,0 +1,32 @@
+\usetheme{Berkeley}
+\setbeamertemplate{caption}[numbered]
+
+\usepackage{geometry}
+\geometry{paperwidth=10in,paperheight=8in}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{physics}
+\usepackage[version=4]{mhchem}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\graphicspath{{./figures/}}
+\usepackage{hyperref}
+\hypersetup{%
+	colorlinks=true,
+	urlcolor=cyan,
+}
+
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\inkfig}[2]{%
+	\def\svgwidth{#1}
+	\import{./figures/}{#2.pdf_tex}
+}
+
+\newcommand{\diff}[1]{\operatorname{d}#1}
+\renewcommand{\vec}[1]{\mathbf{#1}}

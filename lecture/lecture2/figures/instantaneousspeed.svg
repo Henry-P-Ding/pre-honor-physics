@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6in"
+   height="1.5in"
+   viewBox="0 0 152.4 38.1"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="instantaneousspeed.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.9740194"
+     inkscape:cx="191.23418"
+     inkscape:cy="61.802836"
+     inkscape:window-width="1472"
+     inkscape:window-height="857"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect9"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect5"
+       is_visible="true"
+       lpeversion="1" />
+    <marker
+       style="overflow:visible"
+       id="ArrowWide"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path3" />
+    </marker>
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect2"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5">
+      <rect
+         style="fill:none;stroke:#a1c9f4;stroke-width:0.499999;stroke-opacity:1"
+         id="rect6"
+         width="119.18969"
+         height="32.375732"
+         x="15.796224"
+         y="2.7414932"
+         d="M 15.796224,2.7414932 H 134.98591 V 35.117226 H 15.796224 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9">
+      <rect
+         style="fill:none;stroke:#a1c9f4;stroke-width:0.499999;stroke-opacity:1"
+         id="rect10"
+         width="65.364929"
+         height="31.624689"
+         x="15.796224"
+         y="2.7414932" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.499999"
+       d="M 11.101343,38.378928 C 27.782523,22.968632 48.878937,12.392593 71.207185,8.2467118 98.603251,3.159844 127.71911,7.8983073 152.08839,21.409733"
+       id="path1"
+       inkscape:path-effect="#path-effect2"
+       inkscape:original-d="M 11.101343,38.378928 C 30.02649,27.171858 51.964857,19.295191 71.207185,8.2467118 90.449513,-2.8017676 123.59495,19.348055 152.08839,21.409733"
+       sodipodi:nodetypes="csc" />
+    <path
+       style="fill:none;stroke:#a1c9f4;stroke-width:0.499999;stroke-opacity:1"
+       d="M 11.101343,38.378928 C 27.782523,22.968632 48.878937,12.392593 71.207185,8.2467118 98.603251,3.159844 127.71911,7.8983073 152.08839,21.409733"
+       id="path4"
+       inkscape:path-effect="#path-effect5"
+       inkscape:original-d="M 11.101343,38.378928 C 30.02649,27.171858 51.964857,19.295191 71.207185,8.2467118 90.449513,-2.8017676 123.59495,19.348055 152.08839,21.409733"
+       sodipodi:nodetypes="csc"
+       clip-path="url(#clipPath5)" />
+    <path
+       style="fill:none;stroke:#a1c9f4;stroke-width:0.499999;marker-end:url(#ArrowWide);stroke-opacity:1"
+       d="M 15.143487,34.333939 135.24701,13.838014"
+       id="path2" />
+    <path
+       style="fill:none;stroke:#8de5a1;stroke-width:0.499999;stroke-opacity:1"
+       d="M 11.101343,38.378928 C 27.782523,22.968632 48.878937,12.392593 71.207185,8.2467118 98.603251,3.159844 127.71911,7.8983073 152.08839,21.409733"
+       id="path8"
+       inkscape:path-effect="#path-effect9"
+       inkscape:original-d="M 11.101343,38.378928 C 30.02649,27.171858 51.964857,19.295191 71.207185,8.2467118 90.449513,-2.8017676 123.59495,19.348055 152.08839,21.409733"
+       sodipodi:nodetypes="csc"
+       clip-path="url(#clipPath9)" />
+    <path
+       style="fill:none;stroke:#8de5a1;stroke-width:0.499999;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="M 15.143487,34.333939 80.921552,7.0786252"
+       id="path7"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#ff9f9b;stroke-width:0.499999;stroke-opacity:1;marker-end:url(#ArrowWide)"
+       d="M 15.143487,34.333939 26.872123,25.957832"
+       id="path10"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>

@@ -28,5 +28,20 @@
 	\import{./figures/}{#2.pdf_tex}
 }
 
+\newcommand{\mplfig}[1]{%
+	\input{./figures/#1}
+}
+
+% matplotlib pgf output preamble
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\def\mathdefault#1{#1}
+\everymath=\expandafter{\the\everymath\displaystyle}
+
+\ifdefined\pdftexversion\else  % non-pdftex case.
+	\usepackage{fontspec}
+\fi
+\makeatletter\@ifpackageloaded{underscore}{}{\usepackage[strings]{underscore}}\makeatother
+
 \newcommand{\diff}[1]{\operatorname{d}#1}
 \renewcommand{\vec}[1]{\mathbf{#1}}

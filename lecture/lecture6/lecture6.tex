@@ -1,0 +1,178 @@
+\documentclass[20pt]{beamer}
+
+\input{../lecturepreamble.tex}
+
+\author{Henry Ding}
+\date{\today}
+\title{Lesson 6: Momentum}
+
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section{Systems and Point Particles}
+
+\begin{frame}
+	\frametitle{Revisiting Newton's Laws}
+	\begin{definition}
+		A \textbf{point particle} is a point with some a position $\vec{x}$ and mass $m$. A point particle has no physical size or dimensions.
+	\end{definition}
+	\begin{alertblock}{Newton's Laws apply to point particles.}
+		When we solve force problems using Newton's Laws, we are \textit{implicitly} modeling objects as point particles.
+	\end{alertblock}
+	\begin{definition}[Systems Revisited]
+		I called a system a collection of objects we want to study. To be more precise, we can say a \textbf{system} is a collection of point particles.
+	\end{definition}
+	\begin{figure}[ht]
+		\centering
+		\inkfig{0.8\textwidth}{system}
+		%\caption{}
+		\label{fig:system}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{System Example}
+	Consider a rotating disk. We can break the disk up into very many point particles, each with their own position $\vec{x}$, velocity $\vec{v}$, and acceleration $\vec{a}$.
+	Then, we can apply Newton's Laws to each particle in the disk.
+	\begin{figure}[ht]
+		\centering
+		\inkfig{\textwidth}{disk}
+		%\caption{}
+		\label{fig:disk}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Everyday use of Momentum}
+	\begin{itemize}
+		\item ``The team is riding off of the momentum from our last win.``
+		\item ``After securing a key endorsement, the political campaign starting gaining momentum.''
+		\item ``The grassroots movement had too much momentum to stop now.''
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Physics Definition of Momentum}
+	\begin{definition}
+		For a point particle of mass $m$ and velocity $\vec{v}$, its \textbf{momentum} $\vec{p}$ is
+		\begin{align*}
+			\vec{p} = m \vec{v}.
+		\end{align*}
+	\end{definition}
+	\begin{example}
+		Recall the disk earlier. Find the total momentum of the disk system by adding together the momentum of every particle in the disk.
+		\begin{figure}[ht]
+			\centering
+			\inkfig{0.7\textwidth}{disk}
+			%\caption{}
+			\label{fig:disk-example}
+		\end{figure}
+	\end{example}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Momentum Example}
+	\begin{example}
+		A $\SI{0.5}{\kilogram}$ block slides with velocity $\langle \SI{-6}{\meter/\second}, \SI{8}{\meter/\second} \rangle$.
+		What is the block's momentum $\vec{p}$?
+		What is the magnitude $p$?
+	\end{example}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Change in Momentum}
+	\begin{itemize}
+		\item Sometimes, the mass of a system can change. For example, snow can pile onto the roof of a car, increasing its mass.
+		\item If the mass of a system changes, the total momentum can change even if velocity of each particle does not. For example, the momentum of a car driving at a constant velocity can increase as snow piles onto the roof of a car.
+	\end{itemize}
+	Consider a one-dimensional particle's momentum at two points in time separated by a small time $\Delta t$ apart.
+	\begin{itemize}
+		\item The particle's mass barely changes by a small amount from $m$ to $m + \Delta m$
+		\item The particle's velocity barely changes by a small amount from $v$ to $v + \Delta v$.
+		\item The change in momentum is
+		      \begin{align*}
+			      \Delta p & = \left(m + \Delta m\right)\left(v + \Delta v\right) - mv \\
+			               & = mv + v\Delta m + m \Delta v + \Delta m \Delta v - mv.
+		      \end{align*}
+		      $\Delta m \Delta v$ is an extremely small number, so we can ignore it! Then
+		      \begin{align*}
+			      \Delta p = v \Delta m + m \Delta v.
+		      \end{align*}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\frametitle{General Newton's Second Law}
+	The small changes in momentum can be written as
+	\begin{align*}
+		\Delta p = m \Delta v + v \Delta m.
+	\end{align*}
+	The more general statement of Newton's Second Law is
+	\begin{theorem}[Newton's Second Law]
+		As the time $\Delta t$ becomes infinitely small (like instantaneous velocity or acceleration),
+		\begin{align*}
+			\vec{F}_\mathrm{net} = \frac{\Delta p}{\Delta t}
+		\end{align*}
+		or
+		\begin{align*}
+			\vec{F}_\mathrm{net} = \vec{v} \frac{\Delta m}{\Delta t} + m \vec{a}.
+		\end{align*}
+	\end{theorem}
+	If the mass of our system does not change, then $\vec{F}_\mathrm{net} = m \vec{a}$ as usual! It turns out, we need extra force to change the mass of our system.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Collisions}
+	\begin{example}
+		Consider a block sliding towards another block on smooth ground (no friction) so that there are no \textit{external} horizontal forces.
+		The blocks will collide and continue moving with some velocity.
+		\begin{figure}[ht]
+			\centering
+			\inkfig{0.7\textwidth}{collision}
+			%\caption{}
+			\label{fig:collision}
+		\end{figure}
+		Let the collision force acting on blocks $1$ from $2$ be $\vec{F}_{2\rightarrow 1}$. By Newton's Third Law there is an equal and opposite force
+		\begin{align*}
+			\vec{F}_{1 \rightarrow 2} = - \vec{F}_{2 \rightarrow 1}.
+		\end{align*}
+	\end{example}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Conservation of Momentum}
+	\begin{example}[cont.]
+		Since, there are no external forces, the only two forces on our system are
+		\begin{align*}
+			\vec{F}_\mathrm{net} = \vec{F}_{1 \rightarrow 2} + \vec{F}_{2 \rightarrow 1} = 0.
+		\end{align*}
+		Then,
+		\begin{align*}
+			\vec{F}_\mathrm{net} = \frac{\Delta \vec{p}}{\Delta t} = 0
+		\end{align*}
+		so $\vec{p}$ is \textbf{conserved} (does not change with time).
+	\end{example}
+	We showed that $\vec{p}$ is conserved for two blocks colliding with no external forces, but this applies for any system as well.
+	\begin{theorem}[Conservation of Momentum]
+		Consider a system such that $\vec{F}_\mathrm{ext} = 0$. Then the system's total momentum $\vec{p}$ is conserved with time.
+	\end{theorem}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Conservation of Momentum Example}
+	\begin{example}
+		A $\SI{3}{\kilogram}$ block slides to the right at $\SI{4}{\meter/\second}$ towards a stationary block of mass $\SI{2}{\kilogram}$.
+		If the two blocks stick together after colliding, what are the final velocities of the two blocks?
+	\end{example}
+\end{frame}
+
+\section{Homework 6}
+
+\begin{frame}
+	\frametitle{Homework 6}
+	TODO
+\end{frame}
+
+\end{document}

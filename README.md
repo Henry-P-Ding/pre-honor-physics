@@ -1,2 +1,2 @@
-# pre-honor-physics
-Lecture notes and assignments for Stellar Leap Academy's Pre-Honor Physics Course
+# Pre-Honor Physics Course Materials
+Course materials for [Stellar Leap Academy's](https://stellarleapacademy.com/) Pre-Honor Physics Course, which I taught in August 2025.

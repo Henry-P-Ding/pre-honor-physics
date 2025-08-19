@@ -1,41 +1,5 @@
 \usetheme{Berkeley}
 \setbeamertemplate{caption}[numbered]
-
-\usepackage{geometry}
-\geometry{paperwidth=10in,paperheight=8in}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage{physics}
-\usepackage[version=4]{mhchem}
-\usepackage{siunitx}
-\usepackage{graphicx}
-\graphicspath{{./figures/}}
-\usepackage{hyperref}
-\hypersetup{%
-	colorlinks=true,
-	urlcolor=cyan,
-}
-
-\usepackage{import}
-\usepackage{xifthen}
-\usepackage{pdfpages}
-\usepackage{transparent}
-
-\newcommand{\inkfig}[2]{%
-	\def\svgwidth{#1}
-	\import{./figures/}{#2.pdf_tex}
-}
-
-\newcommand{\mplfig}[1]{%
-	\input{./figures/#1}
-}
-
-% matplotlib pgf output preamble
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.18}
-\def\mathdefault#1{#1}
 \everymath=\expandafter{\the\everymath\displaystyle}
 
 \ifdefined\pdftexversion\else  % non-pdftex case.
@@ -44,4 +8,4 @@
 \makeatletter\@ifpackageloaded{underscore}{}{\usepackage[strings]{underscore}}\makeatother
 
 \newcommand{\diff}[1]{\operatorname{d}#1}
-\renewcommand{\vec}[1]{\mathbf{#1}}
+\renewcommand{\vec}[1]{\boldsymbol{#1}}
